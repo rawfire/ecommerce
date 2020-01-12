@@ -9,6 +9,10 @@ html {
     padding: 0;
     box-sizing: inherit;
 }
+body {
+    font-family: "Open Sans";
+    color: #808080;
+}
 
 @import "./layout.scss";
 @import "./headernavbar.scss";
@@ -16,3 +20,4 @@ html {
 @import "./auth/signup.scss";
 
 @import "./page-title.scss";
+@import "./form-fields.scss";
