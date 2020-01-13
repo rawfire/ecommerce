@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
 
 class Header extends Component {
     render() {
@@ -10,4 +11,12 @@ class Header extends Component {
     }
 }
 
+function mapStateToProps(state) {
+    const{ headerLinks } = state.headerNavbar;
+    return {
+        headerLinks
+    }
+}
+
+Header = connect(mapStateToProps)(Header);
 export default Header;
