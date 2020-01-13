@@ -12,6 +12,7 @@ import history from "./history";
 import Layout from "./components/layout";
 import SignIn from "./components/auth/singin";
 import SignUp from "./components/auth/signup";
+import Account from "./components/account/account";
 
 function main() {
   ReactDOM.render(
@@ -22,6 +23,7 @@ function main() {
             <Route path="/" exact component={SignIn}/>
             <Route path="/signin" exact component={SignIn}/>
             <Route path="/signup" exact component={SignUp}/>
+            <Route path="/account" exact component={Account}/>
           </Switch>
         </Layout>
       </Router>
