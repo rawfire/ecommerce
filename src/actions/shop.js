@@ -2,8 +2,16 @@ import {
     SET_SHOP_CATEGORIES,
     SET_NAVBAR_LINKS,
     SET_SHOP_PRODUCTS,
-    FILTER_PRODUCTS_WITH_CATEGORY_ID
+    FILTER_PRODUCTS_WITH_CATEGORY_ID,
+    FILTER_PRODUCTS_WITH_QUERY
 } from "./types";
+
+export function filterProductsWithQuery(fields) {
+    return({
+        type: FILTER_PRODUCTS_WITH_QUERY,
+        payload: fields
+    })
+}
 
 export function filterProductsWithCategoryId(_id) {
     return ({
@@ -55,7 +63,7 @@ export function fetchShopProducts() {
         payload: [
             {
                 _id: 0,
-                title: "Javescript The Last Shadow Puppets",
+                title: "Javascript The Last Shadow Puppets",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
                 belongsTo: [0, 1]
