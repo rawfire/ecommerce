@@ -20,8 +20,8 @@ class ShippingForm extends Component {
 
 
                 <div className="shipping-form__line"></div>
-                <Field className="shipping-form__use-this-address" onClick={() => history.push("/information/payment")} type="submit" title="Use This Address" name="use-this-address" component={FormButton}/>
                 <Field className="shipping-form__back" onClick={() => history.push("/signin")} type="button" short={true} title="back" name="back" component={FormButton}/>
+                <Field className="shipping-form__use-this-address" onClick={() => history.push("/information/payment")} type="submit" title="Use This Address" name="use-this-address" component={FormButton}/>
             </form>
         )
     }
