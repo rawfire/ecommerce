@@ -2,8 +2,7 @@ import React, {Component} from "react";
 
 import { reduxForm, Field } from "redux-form";
 
-import {FormInput, FormButton} from "../formFields";
-import Details from "../details";
+import { FormButton} from "../formFields";
 
 import history from "../../history";
 
@@ -12,12 +11,12 @@ class ReviewForm extends Component {
         const { className, handleSubmit } = this.props;
         
         return(
-            <form onSubmit={handleSubmit} className={`${className} sign-up-form`}>
+            <form onSubmit={handleSubmit} className={`${className} review-form`}>
                
 
-                <div className="sign-up-form__line"></div>
-                <Field className="sign-up-form__login" onClick={() => history.push("/account")} type="submit" title="Create Account" name="login" component={FormButton}/>
-                <Field className="sign-up-form__back" onClick={() => history.push("/signin")} type="button" short={true} title="back" name="back" component={FormButton}/>
+                <div className="review-form__line"></div>
+                <Field className="review-form__proceed" onClick={() => history.push("/signin")} type="submit" title="Proceed to Checkout" name="proceed" component={FormButton}/>
+                <Field className="review-form__back" onClick={() => history.push("/shop")} type="button" short={true} title="back" name="back" component={FormButton}/>
             </form>
         )
     }
