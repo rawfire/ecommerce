@@ -1,12 +1,41 @@
 import {
     SET_PURCHASE_DETAIL,
-    SET_USER_PURCHASES
+    SET_USER_PURCHASES,
+    SET_CART_PRODUCTS
 } from "./types";
 
 export function setPurchaseDetail(_id) {
     return ({
         type: SET_PURCHASE_DETAIL,
         payload: _id
+    })
+}
+
+export function fetchCartProducts() {
+    return({
+        type: SET_CART_PRODUCTS,
+        payload: [
+            {   _id: 0,
+                product: {
+                    _id: 0,
+                title: "Javascript The Last Shadow Puppets",
+                description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
+                price: 1.99,
+                belongsTo: [0, 1]
+                },
+                quantity: 2
+            },
+            {   _id: 1,
+                product:{
+                    _id: 1,
+                title: "Python from the Greek Mythology",
+                description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
+                price: 1.99,
+                belongsTo: [0, 4]
+                },
+                quantity: 1
+            }
+        ]
     })
 }
 
