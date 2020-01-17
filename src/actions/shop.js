@@ -66,49 +66,56 @@ export function fetchShopProducts() {
                 title: "Javascript The Last Shadow Puppets",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 1,
                 title: "Python from the Greek Mythology",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 4]
+                belongsTo: [0, 4],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 2,
                 title: "The Beatles The UI?UX Album",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 3,
                 title: "The Doors Hotel UML",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 5]
+                belongsTo: [0, 5],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 4,
                 title: "Pink Floyd The Linux Experience",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 3]
+                belongsTo: [0, 3],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 5,
                 title: "Led Zeppelin Linux 2",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 3]
+                belongsTo: [0, 3],
+                imageUrl: "http://via.placeholder.com/80x80"
             },
             {
                 _id: 6,
                 title: "David Bowie Ruby",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageUrl: "http://via.placeholder.com/80x80"
             }
         ]
     })

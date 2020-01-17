@@ -28,7 +28,8 @@ export function fetchCartProducts() {
                 title: "Javascript The Last Shadow Puppets",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageUrl: "http://via.placeholder.com/80x80"
                 },
                 quantity: 2
             },
@@ -38,7 +39,8 @@ export function fetchCartProducts() {
                 title: "Python from the Greek Mythology",
                 description: "A product description is the marketing copy that explains what a product is and why it's worth purchasing. The purpose of a product description is to supply customers with important information about the features and benefits of the product so they're compelled to buy.",
                 price: 1.99,
-                belongsTo: [0, 4]
+                belongsTo: [0, 4],
+                imageUrl: "http://via.placeholder.com/80x80"
                 },
                 quantity: 1
             }
